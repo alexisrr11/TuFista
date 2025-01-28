@@ -103,6 +103,8 @@ object-fit: cover;
     gap: 10px;
     position: relative;
     overflow: hidden; 
+    justify-content: center;
+    align-items: center;
     
 }
 .service-content {
@@ -110,6 +112,9 @@ object-fit: cover;
     width: 100%;
     height: 100%;
     transition: transform 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .service-content:hover {
     transform: scale(1.1);
@@ -222,6 +227,9 @@ object-fit: cover;
     .hamburguesa .bx-menu {
         display: block;
     }
+    .logo {
+        text-align: center;
+    }
     .navbar .menu-list {
         display: none;
     }
@@ -277,6 +285,10 @@ object-fit: cover;
 }
 
 @media screen and (max-width:500px) {
+    .logo {
+    padding-right: 25px;
+    background-color: transparent;
+    }
     .service-title h3 {
         font-size: 30px;
     }
@@ -292,8 +304,8 @@ object-fit: cover;
         padding-bottom: 50px;
     }
     .service-txt {
-        left: -15px;
-        width: 90vw;
+        left: -35px;
+        width: 100vw;
         padding: 50px;
     }
     .service-txt h4, p {
